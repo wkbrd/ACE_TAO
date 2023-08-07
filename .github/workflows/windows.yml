@@ -129,7 +129,7 @@ jobs:
         '{"name": "tao","version-string": "githubaction","dependencies": [ ${{ matrix.vcpkgpackages }} ]}' > vcpkg.json
       shell: pwsh
     - name: Install vcpkg
-      uses: lukka/run-vcpkg@v10
+      uses: lukka/run-vcpkg@v11
       with:
         vcpkgGitCommitId: 6ca56aeb457f033d344a7106cb3f9f1abf8f4e98
         appendedCacheKey: ${{ matrix.name }}
